@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - A program that print lines with put function and returns 0
+ * Description: main - A program that print lines with put function 
  * return: always 0 (success)
  */
 int main(void)
