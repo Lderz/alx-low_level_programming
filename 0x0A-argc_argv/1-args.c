@@ -3,24 +3,14 @@
 /**
  * main - shows the number of arg passed into it
  * @argc: The num. of command lines arg.
- * @argv: array 
+ * @argv: array
  * Return: always 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-	int a;
+	int a = argc - 1;
 
-	if (argc == 1)
-		printf("%d \n", argc - 1);
-	else
-	{
-		for (a = 0; *argv; a++, argv++)
-			;
-
-		printf("%d \n", a - 1);
-	}
-
+	printf("%d \n", a);
 	return (0);
 }
-
